@@ -1,0 +1,50 @@
+{
+    "houses": [
+      {
+        "type": "High-class maisonette",
+        "description": "Elegant and luxurious maisonette with top-notch amenities.",
+        "price_range": "High"
+      },
+      {
+        "type": "Middle-income maisonette",
+        "description": "Comfortable maisonette suitable for middle-income families.",
+        "price_range": "Middle"
+      },
+      {
+        "type": "Low-income maisonette",
+        "description": "Affordable maisonette designed for low-income households.",
+        "price_range": "Low"
+      },
+      {
+        "type": "Luxury apartment",
+        "description": "Opulent apartment with high-end features and breathtaking views.",
+        "price_range": "High"
+      },
+      {
+        "type": "Middle-income apartment",
+        "description": "Well-appointed apartment catering to middle-income residents.",
+        "price_range": "Middle"
+      },
+      {
+        "type": "Simple low-income apartment",
+        "description": "Basic apartment designed for cost-conscious individuals or families.",
+        "price_range": "Low"
+      },
+      {
+        "type": "High-class bungalow",
+        "description": "Sumptuous bungalow with spacious interiors and luxurious finishes.",
+        "price_range": "High"
+      },
+      {
+        "type": "Middle-income bungalow",
+        "description": "Cozy bungalow suitable for middle-income homeowners.",
+        "price_range": "Middle"
+      },
+      {
+        "type": "Low-income bungalow",
+        "description": "Affordable bungalow designed for those with a limited budget.",
+        "price_range": "Low"
+      }
+    ]
+  }
+  
