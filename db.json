@@ -3,47 +3,47 @@
       {
         "type": "High-class maisonette",
         "description": "Elegant and luxurious maisonette with top-notch amenities.",
-        "price_range": "High"
+        "Cost rate": "57,600"
       },
       {
         "type": "Middle-income maisonette",
         "description": "Comfortable maisonette suitable for middle-income families.",
-        "price_range": "Middle"
+        "Cost rate": "40,000"
       },
       {
         "type": "Low-income maisonette",
         "description": "Affordable maisonette designed for low-income households.",
-        "price_range": "Low"
+        "Cost rate": "30,000"
       },
       {
         "type": "Luxury apartment",
         "description": "Opulent apartment with high-end features and breathtaking views.",
-        "price_range": "High"
+        "Cost rate": "58,500"
       },
       {
         "type": "Middle-income apartment",
         "description": "Well-appointed apartment catering to middle-income residents.",
-        "price_range": "Middle"
+        "Cost rate": "45,400"
       },
       {
         "type": "Simple low-income apartment",
         "description": "Basic apartment designed for cost-conscious individuals or families.",
-        "price_range": "Low"
+        "Cost rate": "39,000"
       },
       {
         "type": "High-class bungalow",
         "description": "Sumptuous bungalow with spacious interiors and luxurious finishes.",
-        "price_range": "High"
+        "Cost rate": "45,000"
       },
       {
         "type": "Middle-income bungalow",
         "description": "Cozy bungalow suitable for middle-income homeowners.",
-        "price_range": "Middle"
+        "Cost rate": "32,000"
       },
       {
         "type": "Low-income bungalow",
         "description": "Affordable bungalow designed for those with a limited budget.",
-        "price_range": "Low"
+        "Cost rate": "20,000"
       }
     ]
   }

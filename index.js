@@ -35,3 +35,43 @@ function calculateSquareMeters() {
         resultDiv.textContent = "Invalid input. Please enter a valid number.";
     }
 }
+
+//BUILDING COSTS PER SQUARE METRE
+
+async function fetchHouseData() {
+    const response = await fetch('db.json');
+    const data = await response.json();
+    return data.houses;
+}
+
+function calculateBuildingCost() {
+    let selectHouseType = document.getElementById("selectHouseType");
+    let squareMetersInput = document.getElementById("squareMetersInput");
+    let resultDiv = document.getElementById("result");
+
+    let selectedHouseType = selectHouseType.value;
+    let squareMeters = parseFloat(squareMetersInput.value);
+
+    if (selectedHouseType && !isNaN(squareMeters)) {
+        fetchHouseData()
+            .then(houses => {
+                const selectedHouse = houses.find(house => house.type === selectedHouseType);
+
+                if (selectedHouse) {
+                    let costRate = parseFloat(selectedHouse["Cost rate"]);
+                    let totalCost = squareMeters * costRate;
+
+                    resultDiv.textContent = `The cost for ${selectedHouseType} with ${squareMeters} square meters is $${totalCost}.`;
+                } else {
+                    resultDiv.textContent = "Invalid house type selected.";
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching house data:', error);
+                resultDiv.textContent = "An error occurred while fetching house data.";
+            });
+    } else {
+        resultDiv.textContent = "Please select a valid house type and enter a valid number of square meters.";
+    }
+}
+

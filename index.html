@@ -16,6 +16,7 @@
     <div>
         <h3>Building costs per square metre</h3>
     </div>
+    <script src="./index.js"></script>
     <div>
         <label for="selectHouseType">Select house type</label>
         <select id="selectHouseType">
@@ -23,13 +24,19 @@
             <option value="">High-class maisonette</option>
             <option value="">Middle-income maisonette</option>
             <option value="">Low-income maisonette</option>
+            <option value="">Luxury apartment</option>
+            <option value="">Middle-income apartment</option>
+            <option value="">Simple low-income apartment</option>
+            <option value="">High-class bungalow</option>
+            <option value="">Middle-income bungalow</option>
+            <option value="">Low-income bungalow</option>
         </select>
     <div>
         <br>
     </div>
-    <div><label for="squareMetersInput">Enter the square meters:</label>
+    <div><label for="squareMetersInput">Enter the square meters</label>
         <input type="number" id="squareMetersInput" placeholder="Enter square meters">
-        <button onclick="calculateSquareMeters()">Calculate</button></div>
+        <button onclick="calculateBuildingCost()">Cost</button></div>
     </div>
     <div id="result"></div>
     <script src="./index.js"></script>
