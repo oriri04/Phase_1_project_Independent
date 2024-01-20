@@ -1,46 +1,50 @@
-
 fetch('http://localhost:3000/houses')
-            .then(res => res.json())
-            .then(data => {
-                const houseList = document.getElementById('house-list');
-                data.forEach(house => {
-                    const markup = `<li data-description="${house.description}">${house.type}</li>`;
-                    houseList.insertAdjacentHTML('beforeend', markup);
-                });
-            })
-            .catch(error => console.error('Error:', error));
+    .then(res => res.json())
+    .then(data => {
+        const houseList = document.getElementById('house-list');
+        data.forEach(house => {
+            const markup = `<li data-description="${house.description}" data-cost-rate="${house.costRate}">
+                              <strong>${house.type}</strong>
+                              <button class="show-description-button">Description</button>
+                              <input type="number" class="floor-area-input" placeholder="Enter Floor Area">
+                              <button class="calculate-cost-button">Calculate Cost</button>
+                              <div class="construction-cost-container"></div>
+                              <div class="description-container"></div>
+                            </li>`;
+            houseList.insertAdjacentHTML('beforeend', markup);
+        });
 
-        // Add event listener for button click
-        document.getElementById('show-descriptions').addEventListener('click', function() {
-            const houseDescriptionsContainer = document.getElementById('house-descriptions');
-            houseDescriptionsContainer.innerHTML = ''; // Clear previous content
+        // Add event listeners for each button
+        const showDescriptionButtons = document.querySelectorAll('.show-description-button');
+        showDescriptionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const descriptionContainer = button.parentNode.querySelector('.description-container');
+                descriptionContainer.innerHTML = ''; // Clear previous content
 
-            const houseListItems = document.querySelectorAll('#house-list li');
-            houseListItems.forEach(item => {
-                const description = item.getAttribute('data-description');
+                const description = button.parentNode.getAttribute('data-description');
                 const descriptionMarkup = `<p>${description}</p>`;
-                houseDescriptionsContainer.insertAdjacentHTML('beforeend', descriptionMarkup);
+                descriptionContainer.insertAdjacentHTML('beforeend', descriptionMarkup);
             });
         });
 
-// fetch('http://localhost:3000/houses')
-// .then(res => res.json())
-// .then(data => {
-//     data.forEach(house => {
-//         const markup = `<li>${house.type}</li>`;
-//         document.getElementById('house-list').insertAdjacentHTML('beforeend', markup);
-//     });
-// })
-// .catch(error => console.error('Error:', error));
+        const calculateCostButtons = document.querySelectorAll('.calculate-cost-button');
+        calculateCostButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const floorAreaInput = button.parentNode.querySelector('.floor-area-input');
+                const floorArea = parseFloat(floorAreaInput.value);
+                const constructionCostContainer = button.parentNode.querySelector('.construction-cost-container');
+                const costRateString = button.parentNode.getAttribute('data-cost-rate');
+                
+                if (!isNaN(floorArea) && costRateString !== null) {
+                    const costRate = parseFloat(costRateString);
+                    const constructionCost = floorArea * costRate;
 
-// document.getElementById('show-descriptions').addEventListener('click', function() {
-//     const houseDescriptionsContainer = document.getElementById('house-descriptions');
-//     houseDescriptionsContainer.innerHTML = ''; // Clear previous content
-
-//     const houseListItems = document.querySelectorAll('#house-list li');
-//     houseListItems.forEach(item => {
-//         const description = item.getAttribute('data-description');
-//         const descriptionMarkup = `<p>${description}</p>`;
-//         houseDescriptionsContainer.insertAdjacentHTML('beforeend', descriptionMarkup);
-//     });
-// });
+                    // Display construction cost below the house description
+                    constructionCostContainer.innerHTML = `<p>Construction cost: $${constructionCost.toFixed(2)}</p>`;
+                } else {
+                    constructionCostContainer.innerHTML = '<p>Please enter a valid floor area.</p>';
+                }
+            });
+        });
+    })
+    .catch(error => console.error('Error:', error));

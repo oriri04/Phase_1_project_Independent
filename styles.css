@@ -1,33 +1,61 @@
-/* Reset some default browser styles */
-body, h1, h2, ul, p {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Arial', sans-serif; /* Default font */
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333333; /* Default text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 h1 {
-    font-family: 'Georgia', serif; /* Heading font */
-    font-size: 2em;
-    color: #0066cc; /* Heading text color */
-}
-h2 {
-    font-family: 'Verdana', sans-serif; /* Sub-heading font */
-    font-size: 1.5em;
-    color: #009900; /* Sub-heading text color */
+    text-align: center;
+    color: #333;
 }
 
-/* Apply different fonts for specific elements or IDs */
 #house-list {
-    font-family: 'Courier New', monospace;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#house-details {
-    font-family: 'Times New Roman', serif;
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+li:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    width: 50%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.floor-area-input {
+    width: 50%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.construction-cost-container {
+    margin-top: 10px;
+}
+
+p {
+    margin: 0;
+    color: #333;
+}
