@@ -1,3 +1,4 @@
+
 fetch('http://localhost:3000/houses')
 .then(res => res.json())
 .then(data => {
@@ -15,7 +16,6 @@ fetch('http://localhost:3000/houses')
         houseList.insertAdjacentHTML('beforeend', markup);
     });
 
-    // Add event listeners for each button
     const showDescriptionButtons = document.querySelectorAll('.show-description-button');
     showDescriptionButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -27,9 +27,6 @@ fetch('http://localhost:3000/houses')
             descriptionContainer.insertAdjacentHTML('beforeend', descriptionMarkup);
         });
     });
-
-   // ...
-// ...
 
 const calculateCostButtons = document.querySelectorAll('.calculate-cost-button');
 calculateCostButtons.forEach(button => {
@@ -45,7 +42,6 @@ calculateCostButtons.forEach(button => {
             const constructionCost = floorArea * costRate;
             const constructionPeriod = floorArea * constructionRate;
 
-            // Display construction cost and period below the house description with commas
             constructionCostContainer.innerHTML = `<p>Construction cost: Kshs ${constructionCost.toLocaleString('en-US')}</p>`;
             constructionPeriodContainer.innerHTML = `<p>Construction period: ${constructionPeriod.toLocaleString('en-US')} months</p>`;
         } else {
