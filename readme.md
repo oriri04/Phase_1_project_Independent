@@ -54,4 +54,6 @@ Make sure to replace `<https://github.com/oriri04/Phase_1_project_Independent>` 
 
 ## Project board
 
+My Trello Board link
+
 https://trello.com/b/aTPbRxal/phase1projectindependent
