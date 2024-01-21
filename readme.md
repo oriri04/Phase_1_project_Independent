@@ -16,7 +16,7 @@ This web app allows users to view a list of houses, explore detailed description
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/oriri04/Phase_1_project_Independent>
    ```
 
 2. Open the `index.html` file in your preferred web browser.
