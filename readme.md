@@ -42,7 +42,7 @@ The web app fetches house data from a JSON file (`db.json`) hosted on a local se
 
 ## Credits
 
-- This project was created by [Your Name].
+- This project was created by [Alfred Oriri].
 
 ## License
 
@@ -50,4 +50,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Make sure to replace `<repository-url>` and `[Your Name]` with your actual repository URL and name. Also, consider adding a `LICENSE` file with the text of the MIT License if you haven't done so already.
+Make sure to replace `<https://github.com/oriri04/Phase_1_project_Independent>` and `[Alfred Oriri]` with your actual repository URL and name. Also, consider adding a `LICENSE` file with the text of the MIT License if you haven't done so already.
+
+## Project board
+
+https://trello.com/b/aTPbRxal/phase1projectindependent

@@ -5,63 +5,63 @@
         "type": "High-Class Maisonette",
         "description": "Elegant and luxurious maisonette with top-notch amenities.",
         "Cost rate": "57600",
-        "Construction period rate": "0.0125"
+        "Construction period rate": "0.0225"
       },
       {
         "id": "2",
         "type": "Middle-Income Maisonette",
         "description": "Comfortable maisonette suitable for middle-income families.",
         "Cost rate": "40000",
-        "Construction period rate": "0.0083"
+        "Construction period rate": "0.0175"
       },
       {
         "id": "3",
         "type": "Low-Income Maisonette",
         "description": "Affordable maisonette designed for low-income households.",
         "Cost rate": "30000",
-        "Construction period rate": "0.00583"
+        "Construction period rate": "0.0125"
       },
       {
         "id": "4",
         "type": "Luxury Apartment",
         "description": "Opulent apartment with high-end features and breathtaking views.",
         "Cost rate": "58500",
-        "Construction period rate": "0.01667"
+        "Construction period rate": "0.012"
       },
       {
         "id": "5",
         "type": "Middle-Income Apartment",
         "description": "Well-appointed apartment catering to middle-income residents.",
         "Cost rate": "45400",
-        "Construction period rate": "0.0125"
+        "Construction period rate": "0.01"
       },
       {
         "id": "6",
         "type": "Simple Low-Income Apartment",
         "description": "Basic apartment designed for cost-conscious individuals or families.",
         "Cost rate": "39000",
-        "Construction period rate": "0.0083"
+        "Construction period rate": "0.009"
       },
       {
         "id": "7",
         "type": "High-Class Bungalow",
         "description": "Sumptuous bungalow with spacious interiors and luxurious finishes.",
         "Cost rate": "45000",
-        "Construction period rate": "0.0083"
+        "Construction period rate": "0.015"
       },
       {
         "id": "8",
         "type": "Middle-Income Bungalow",
         "description": "Cozy bungalow suitable for middle-income homeowners.",
         "Cost rate": "32000",
-        "Construction period rate": "0.0058"
+        "Construction period rate": "0.0125"
       },
       {
         "id": "9",
         "type": "Low-Income Bungalow",
         "description": "Affordable bungalow designed for those with a limited budget.",
         "Cost rate": "20000",
-        "Construction period rate": "0.0033"
+        "Construction period rate": "0.01"
       }
     ]
   }
