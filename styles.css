@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Fanatix;
     margin: 0;
     padding: 20px;
     background-color: #bdc5d8;
@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     padding: 0;
     font-style: italic;
+    font-family: bookman;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +50,8 @@ button {
 }
 
 .floor-area-input {
-    width: 50%;
+    width: 45%;
+    font-style: italic;
     padding: 8px;
     margin-top: 10px;
     box-sizing: border-box;
