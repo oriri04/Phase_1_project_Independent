@@ -2,19 +2,21 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #668beb;
+    background-color: #bdc5d8;
 }
 
 h1 {
     text-align: center;
     font-style: italic;
     font-family: 'times new romans';
-    color: #333;
+    color: #120c0cdf;
 }
 
 #house-list {
     list-style: none;
+    text-align: center;
     padding: 0;
+    font-style: italic;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +24,8 @@ h1 {
 }
 
 li {
-    background-color: #55b9bd;
-    border: 1px solid #ddd;
+    background-color: #b7b5c9;
+    border: 1px solid #7269f0;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
@@ -39,9 +41,9 @@ li:hover {
 button {
     padding: 10px;
     margin-top: 10px;
-    background-color: #3498db;
-    color: #fff;
-    width: 50%;
+    background-color: #e4eff6;
+    color: #1a1933;
+    width: 65%;
     border-radius: 4px;
     cursor: pointer;
 }
