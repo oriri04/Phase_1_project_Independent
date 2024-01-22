@@ -20,7 +20,7 @@ fetch('http://localhost:3000/houses')
     showDescriptionButtons.forEach(button => {
         button.addEventListener('click', function() {
             const descriptionContainer = button.parentNode.querySelector('.description-container');
-            descriptionContainer.innerHTML = ''; // Clear previous content
+            descriptionContainer.innerHTML = ''; 
 
             const description = button.parentNode.getAttribute('data-description');
             const descriptionMarkup = `<p>${description}</p>`;
@@ -43,7 +43,7 @@ calculateCostButtons.forEach(button => {
             const constructionPeriod = floorArea * constructionRate;
 
             constructionCostContainer.innerHTML = `<p>Construction cost: Kshs ${constructionCost.toLocaleString('en-US')}</p>`;
-            constructionPeriodContainer.innerHTML = `<p>Construction period: ${constructionPeriod.toLocaleString('en-US')} months</p>`;
+            constructionPeriodContainer.innerHTML = `<p>Construction period: ${constructionPeriod.toLocaleString('en-US')} Months</p>`;
         } else {
             constructionCostContainer.innerHTML = '<p>Please enter valid values.</p>';
             constructionPeriodContainer.innerHTML = '<p>Please enter valid values.</p>';
